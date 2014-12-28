@@ -17,6 +17,7 @@
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
+		<start-class>sample.jetty.SampleJettyApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -40,8 +41,8 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
